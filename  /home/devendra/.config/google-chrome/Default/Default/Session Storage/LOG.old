@@ -1,2 +1,3 @@
-2021/05/25-11:58:33.942 3 Creating DB /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/Session Storage since it was missing.
-2021/05/25-11:58:33.946 3 Reusing MANIFEST /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/Session Storage/MANIFEST-000001
+2021/05/25-12:31:31.151 5 Reusing MANIFEST /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/Session Storage/MANIFEST-000001
+2021/05/25-12:31:31.152 5 Recovering log #3
+2021/05/25-12:31:31.154 5 Reusing old log /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/Session Storage/000003.log 

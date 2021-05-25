@@ -1,2 +1,3 @@
-2021/05/25-11:58:40.261 64ec Creating DB /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/data_reduction_proxy_leveldb since it was missing.
-2021/05/25-11:58:40.274 64ec Delete type=3 #1
+2021/05/25-12:31:31.359 7a19 Recovering log #23
+2021/05/25-12:31:31.363 7a19 Delete type=0 #23
+2021/05/25-12:31:31.363 7a19 Delete type=3 #22
