@@ -1,3 +1,12 @@
-2021/05/25-12:31:32.403 7a18 Reusing MANIFEST /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/05/25-12:31:32.403 7a18 Recovering log #7
-2021/05/25-12:31:32.447 7a18 Reusing old log /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000007.log 
+2021/05/25-13:12:43.692 884c Reusing MANIFEST /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/25-13:12:43.692 884c Recovering log #7
+2021/05/25-13:12:43.754 884c Reusing old log /home/devendra/SDP/whatsapp_fry/ /home/devendra/.config/google-chrome/Default/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000007.log 
+2021/05/25-13:13:14.270 8857 Level-0 table #12: started
+2021/05/25-13:13:14.313 8857 Level-0 table #12: 1210803 bytes OK
+2021/05/25-13:13:14.315 8857 Delete type=0 #7
+2021/05/25-13:13:15.116 8858 Compacting 1@1 + 1@2 files
+2021/05/25-13:13:15.166 8858 Generated table #13@1: 16094 keys, 663402 bytes
+2021/05/25-13:13:15.166 8858 Compacted 1@1 + 1@2 files => 663402 bytes
+2021/05/25-13:13:15.167 8858 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/05/25-13:13:15.167 8858 Delete type=2 #9
+2021/05/25-13:13:15.167 8858 Delete type=2 #12

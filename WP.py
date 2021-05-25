@@ -1,47 +1,32 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-driver = ""
 
 
-def main():
-    added_options = webdriver.ChromeOptions()
-    added_options.add_argument(
-        '--user-data-dir= /home/devendra/.config/google-chrome/Default')
-    added_options.add_argument('--profile-directory=Default')
-    driver = webdriver.Chrome(
-        '/home/devendra/SDP/whatsapp_fry/chromedriver', options=added_options)
-    driver.get('https://web.whatsapp.com')
-    print("Scan QR code and hit Enter")
-    input()
-    print("Logged in success")
-    time.sleep(1)
-    send_message()
+added_options = webdriver.ChromeOptions()
+added_options.add_argument(
+    '--user-data-dir= /home/devendra/.config/google-chrome/Default')
+added_options.add_argument('--profile-directory=Default')
+driver = webdriver.Chrome(
+    '/home/devendra/SDP/whatsapp_fry/chromedriver', options=added_options)
 
 
-def send_message():
-    contact = input('enter name of contact : ')
-    find_contact(contact)
+driver.get('https://web.whatsapp.com')
+print("Scan QR code and hit Enter")
+input()
+print("Logged in success")
+time.sleep(1)
 
-    print("enter 1 for text message")
-    print("enter 2 for image")
+contact = input('enter name of contact : ')
+search_box = driver.find_element_by_xpath(
+    "//*[@id='side']/div[1]/div/label/div/div[2]")
+search_box.send_keys(contact)
+search_box.send_keys(Keys.ENTER)
 
-    msg_type = int(input("enter your choice : "))
-
-    if(msg_type == 1):
-        text_message()
-    elif(msg_type == 2):
-        image_message()
-
-
-def find_contact(contact):
-    search_box = driver.find_element_by_xpath(
-        "//*[@id='side']/div[1]/div/label/div/div[2]")
-    search_box.send_keys(contact)
-    search_box.send_keys(Keys.ENTER)
-
-
-def text_message():
+print("enter 1 for text message")
+print("enter 2 for image")
+msg_type = int(input("enter your choice : "))
+if(msg_type == 1):
     msg = input('enter the message : ')
     no_of_msg = int(input('enter number of message : '))
     msg_box = driver.find_element_by_xpath(
@@ -50,9 +35,8 @@ def text_message():
     for i in range(no_of_msg):
         msg_box.send_keys(msg)
         msg_box.send_keys
-
-
-def image_message():
+    print("successful")
+else:
     file_path = (input("enter file path : "))
     caption = (input("enter caption : "))
     attachment_section = driver.find_element_by_xpath(
@@ -70,8 +54,5 @@ def image_message():
     send_button.click()
     print("successful")
 
-
 time.sleep(120)
 driver.quit()
-
-main()
