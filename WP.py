@@ -31,10 +31,11 @@ if(msg_type == 1):
     no_of_msg = int(input('enter number of message : '))
     msg_box = driver.find_element_by_xpath(
         "//*[@id='main']/footer/div[1]/div[2]/div/div[2]")
-    time.sleep(1)
+    time.sleep(5)
     for i in range(no_of_msg):
         msg_box.send_keys(msg)
-        msg_box.send_keys
+        time.sleep(5)
+        msg_box.send_keys(Keys.ENTER)
     print("successful")
 else:
     file_path = (input("enter file path : "))
